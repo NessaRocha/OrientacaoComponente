@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header({ title }) {
   return (
     <div
@@ -9,6 +11,12 @@ function Header({ title }) {
       }}
     >
       <h1>{title}</h1>
+      <nav>
+        <Link to="home">Home</Link>
+        <Link to="produtos">Produtos</Link>
+        <Link to="detalhesProdutos">DetalheDoProduto</Link>
+        <Link to="cadastrar">Cadastrar</Link>
+      </nav>
     </div>
   );
 }
