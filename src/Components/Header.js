@@ -13,6 +13,9 @@ function Header({ title }) {
     >
       <h1>{title}</h1>
       <nav>
+        <Link style={{ marginRight: 20 }} to="/">
+          Home
+        </Link>
         <Link style={{ marginRight: 20 }} to="/home">
           Home
         </Link>
