@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Cadastrar from "./Pages/Cadastrar";
 import DetalheDoProduto from "./Pages/DetalheDoProduto";
 import Home from "./Pages/Home";
@@ -10,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="produtos" element={<Produtos />} />
-        <Route path="detalhesProdutos" element={<DetalheDoProduto />} />
-        <Route path="cadastrar" element={<Cadastrar />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/detalhesProdutos" element={<DetalheDoProduto />} />
+        <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
   );

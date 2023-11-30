@@ -2,7 +2,7 @@ import Header from "../Components/Header";
 function DetalheDoProduto() {
   return (
     <>
-      <Header title="Detalhe do produto" />
+      <Header title="Detalhes do produto" />
     </>
   );
 }

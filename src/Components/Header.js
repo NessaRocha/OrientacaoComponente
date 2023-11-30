@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 function Header({ title }) {
   return (
@@ -12,10 +13,18 @@ function Header({ title }) {
     >
       <h1>{title}</h1>
       <nav>
-        <Link to="home">Home</Link>
-        <Link to="produtos">Produtos</Link>
-        <Link to="detalhesProdutos">DetalheDoProduto</Link>
-        <Link to="cadastrar">Cadastrar</Link>
+        <Link style={{ marginRight: 20 }} to="/home">
+          Home
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/produtos">
+          Produtos
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/detalhesProdutos">
+          DetalheDoProduto
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/cadastrar">
+          Cadastrar
+        </Link>
       </nav>
     </div>
   );
