@@ -3,15 +3,7 @@ import "./Header.css";
 
 function Header({ title }) {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "80px",
-        backgroundColor: "black",
-        color: "white",
-      }}
-    >
-      <h1>{title}</h1>
+    <div>
       <nav>
         <Link style={{ marginRight: 20 }} to="/">
           Home
@@ -25,10 +17,11 @@ function Header({ title }) {
         <Link style={{ marginRight: 20 }} to="/detalhesProdutos">
           DetalheDoProduto
         </Link>
-        <Link style={{ marginRight: 20 }} to="/cadastrar">
+        <Link style={{ marginRight: 20 }} to="/formulario">
           Cadastrar
         </Link>
       </nav>
+      <h1>{title}</h1>
     </div>
   );
 }
