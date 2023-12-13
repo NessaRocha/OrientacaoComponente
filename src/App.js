@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 import Cadastrar from "./pages/Cadastrar";
 import DetalheDoProduto from "./pages/DetalheDoProduto";
 import Produtos from "./pages/Produtos";
-import Formulario from "./pages/Formulario";
+import FormulariodeCadastro from "./pages/cadastroProdutos/FormulariodeCadastro";
 
 const ProductContext = React.createContext({
   products: [],
@@ -31,7 +31,10 @@ function App() {
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/detalhesProdutos" element={<DetalheDoProduto />} />
           <Route path="/cadastrar" element={<Cadastrar />} />
-          <Route path="/formulario" element={<Formulario />} />
+          <Route
+            path="/formulariodeCadastro"
+            element={<FormulariodeCadastro />}
+          />
         </Routes>
       </BrowserRouter>
     </ProductContext.Provider>
