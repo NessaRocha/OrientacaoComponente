@@ -8,16 +8,13 @@ function Header({ title }) {
         <Link style={{ marginRight: 20 }} to="/">
           Home
         </Link>
-        <Link style={{ marginRight: 20 }} to="/home">
-          Home
-        </Link>
         <Link style={{ marginRight: 20 }} to="/produtos">
           Produtos
         </Link>
         <Link style={{ marginRight: 20 }} to="/detalhesProdutos">
           DetalheDoProduto
         </Link>
-        <Link style={{ marginRight: 20 }} to="/formulario">
+        <Link style={{ marginRight: 20 }} to="/formulariodeCadastro">
           Cadastrar
         </Link>
       </nav>
