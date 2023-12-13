@@ -19,10 +19,10 @@ export function useProducts() {
 }
 
 function App() {
-  const [products, setProducts] = useState([]);
+  const [produtos, setProdutos] = useState([]);
 
   return (
-    <ProductContext.Provider value={{ products, setProducts }}>
+    <ProductContext.Provider value={{ produtos, setProdutos }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
