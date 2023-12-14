@@ -1,6 +1,7 @@
-import CardProduto from "../../cardProduto/CardProduto";
+import CardProduto from "../../components/cardProduto/CardProduto";
 import React, { useContext, useState } from "react";
 import Header from "../../components/header/Header";
+import { ProductContext } from "../../productContext/ProductContext";
 import "./produtos.css";
 import { UseDebounce } from "../../hooks/UseDebounce";
 
@@ -9,7 +10,7 @@ function Produtos() {
   const productContext = useContext(ProductContext);
 
   const fetchProducts = async () => {
-    const result = await fetch("http://localhost:3000/produtos");
+    const result = await fetch("http://localhost:3001/produtos");
     const produtos = await result.json();
     console.log(produtos);
     setData(produtos);

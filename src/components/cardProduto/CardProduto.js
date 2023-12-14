@@ -1,7 +1,7 @@
 // CardProduto.js
-import React, { useState } from 'react';
-import Modal from '../modal/Modal';
-import './CardProduto.css';
+import React, { useState } from "react";
+import Modal from "../../modal/Modal";
+import "./CardProduto.css";
 
 function CardProduto({ nome, preco, descricao, fotoUrl }) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,13 +27,13 @@ function CardProduto({ nome, preco, descricao, fotoUrl }) {
       </div>
       {modalOpen && (
         <Modal
-            isOpen={modalOpen}
-            closeModal={closeModal}
-            nome={nome}
-            preco={preco}
-            descricao={descricao}
-            fotoUrl={fotoUrl}
-            position={modalPosition}
+          isOpen={modalOpen}
+          closeModal={closeModal}
+          nome={nome}
+          preco={preco}
+          descricao={descricao}
+          fotoUrl={fotoUrl}
+          position={modalPosition}
         />
       )}
     </div>
