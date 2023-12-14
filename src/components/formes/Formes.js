@@ -33,7 +33,7 @@ function Formes() {
       photo_url: fotoUrl,
     };
 
-    const response = await fetch("http://localhost:3000/produtos", {
+    const response = await fetch("http://localhost:3001/produtos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
