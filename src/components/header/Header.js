@@ -17,7 +17,7 @@ function Header({ title }) {
             <nav className="navegador">
               <Link to={"/"}>HOME</Link>
               <Link to={"/produtos"}>PRODUTOS</Link>
-              <Link to={"/cadastroProdutos"}>CADASTRO DE PRODUTOS</Link>
+              <Link to={"/formulariodeCadastro"}>CADASTRO DE PRODUTOS</Link>
             </nav>
           </div>
         </div>
