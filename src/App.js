@@ -1,8 +1,10 @@
-import React, { useState, BrowserRouter, Routes, Route } from "react";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Produtos from "./pages/produtos/produtos";
 import Cadastrar from "./pages/cadastroProdutos/FormulariodeCadastro";
 import { ProductContext } from "./productContext/ProductContext";
+import { useState } from "react";
 
 function App() {
   const [produtos, setProdutos] = useState();
