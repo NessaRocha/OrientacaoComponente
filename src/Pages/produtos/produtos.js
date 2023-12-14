@@ -10,7 +10,7 @@ function Produtos() {
   const productContext = useContext(ProductContext);
 
   const fetchProducts = async () => {
-    const result = await fetch("http://localhost:3001/produtos");
+    const result = await fetch("http://localhost:3000/produtos");
     const produtos = await result.json();
     console.log(produtos);
     setData(produtos);
