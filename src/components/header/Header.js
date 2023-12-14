@@ -1,22 +1,30 @@
-import { Link } from "react-router-dom";
 import "./Header.css";
+import React from "react";
+
+import { Link } from "react-router-dom";
 
 function Header({ title }) {
   return (
-    <div>
-      <nav>
-        <Link style={{ marginRight: 20 }} to="/">
-          Home
-        </Link>
-        <Link style={{ marginRight: 20 }} to="/produtos">
-          Produtos
-        </Link>
-        <Link style={{ marginRight: 20 }} to="/formulariodeCadastro">
-          Cadastrar
-        </Link>
-      </nav>
-      <h1>{title}</h1>
-    </div>
+    <>
+      <div className="fundo">
+        <div className="half">
+          <div className="half-content">
+            <p>{title}</p>
+          </div>
+        </div>
+        <div className="half">
+          <div className="half-content">
+            <nav className="navegador">
+              <Link to={"/"}>HOME</Link>
+              <Link to={"/produtos"}>PRODUTOS</Link>
+              <Link to={"/cadastroProdutos"}>CADASTRO DE PRODUTOS</Link>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
+//<Link to={"/produtos"}>PRODUTOS</Link>
+//<Link to={"/contato"}>CADASTRO DE PRODUTOS</Link>
 export default Header;

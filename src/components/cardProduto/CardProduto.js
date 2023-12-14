@@ -1,6 +1,6 @@
 // CardProduto.js
 import React, { useState } from "react";
-import Modal from "../../modal/Modal";
+import Modal from "../modal/Modal";
 import "./CardProduto.css";
 
 function CardProduto({ nome, preco, descricao, fotoUrl }) {

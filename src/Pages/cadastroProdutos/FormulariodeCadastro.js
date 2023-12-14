@@ -1,5 +1,6 @@
 import Header from "../../components/header/Header";
 import Formes from "../../components/formes/Formes";
+import "./FormularioCadastro.css";
 
 function Cadastro() {
   const handleFormSubmit = (novoProduto) => {
@@ -12,8 +13,8 @@ function Cadastro() {
       <div className="container">
         <div className="half">
           <img
-            alt="imagem decorativa"
-            src="https://img.freepik.com/free-vector/geometric-network-connection-background_23-2148876717.jpg?w=1380&t=st=1701013338~exp=1701013938~hmac=047106350e7681e7b7ed91ec5f8bbdf5e0f51f2942f00d5d2bd83a8da8b1a10b"
+            alt="imagem"
+            src="https://media.gazetadopovo.com.br/2021/05/07120112/rivetti-santa-catarina-loja-3-960x540.jpg"
           ></img>
         </div>
         <div className="half">
