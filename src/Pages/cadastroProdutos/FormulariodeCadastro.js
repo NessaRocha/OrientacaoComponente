@@ -1,6 +1,5 @@
 import Header from "../../components/header/Header";
 import Formes from "../../components/formes/Formes";
-import "./F";
 
 function Cadastro() {
   const handleFormSubmit = (novoProduto) => {

@@ -1,7 +1,6 @@
-import CardProduto from "../../components/cardProduto/CardProduto";
+import CardProduto from "../../cardProduto/CardProduto";
 import React, { useContext, useState } from "react";
-import { ProductContext } from "../../poductContext/ProductContext";
-import NavBar from "../../components/header/NavBar";
+import Header from "../../components/header/Header";
 import "./produtos.css";
 import { UseDebounce } from "../../hooks/UseDebounce";
 
@@ -10,11 +9,11 @@ function Produtos() {
   const productContext = useContext(ProductContext);
 
   const fetchProducts = async () => {
-    const result = await fetch("http://localhost:3001/produtos");
-    const products = await result.json();
-    console.log(products);
-    setData(products);
-    productContext.setProducts(products);
+    const result = await fetch("http://localhost:3000/produtos");
+    const produtos = await result.json();
+    console.log(produtos);
+    setData(produtos);
+    productContext.setProducts(produtos);
   };
   UseDebounce({
     func: () => fetchProducts(),
@@ -23,7 +22,7 @@ function Produtos() {
 
   return (
     <>
-      <NavBar title={"Produtos"} />
+      <Header title={"Produtos"} />
       <div className="container">
         <div className="card-container">
           {data &&

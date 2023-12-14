@@ -6,12 +6,11 @@ import React, {
   Route,
 } from "react";
 import Home from "./pages/Home";
-import DetalheDoProduto from "./pages/DetalheDoProduto";
-import Produtos from "./pages/Produtos";
+import Produtos from "./pages/produtos/produtos";
 import Cadastrar from "./pages/cadastroProdutos/FormulariodeCadastro";
 
 const ProductContext = React.createContext({
-  products: [],
+  produtos: [],
 });
 
 export function useProducts() {
@@ -27,7 +26,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/produtos" element={<Produtos />} />
-          <Route path="/detalhesProdutos" element={<DetalheDoProduto />} />
           <Route path="/formulariodeCadastro" element={<Cadastrar />} />
         </Routes>
       </BrowserRouter>

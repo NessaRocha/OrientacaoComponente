@@ -11,9 +11,6 @@ function Header({ title }) {
         <Link style={{ marginRight: 20 }} to="/produtos">
           Produtos
         </Link>
-        <Link style={{ marginRight: 20 }} to="/detalhesProdutos">
-          DetalheDoProduto
-        </Link>
         <Link style={{ marginRight: 20 }} to="/formulariodeCadastro">
           Cadastrar
         </Link>
